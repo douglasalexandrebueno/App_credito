@@ -7,7 +7,7 @@ import sklearn
 import pandas as pd
 import numpy as np
 
-# Biblioteca utilizada na Construção do modelo preditivo
+# Biblioteca utilizada na construção do modelo preditivo
 from sklearn.svm import SVC
 
 # biblioteca para imoortação de modelo
