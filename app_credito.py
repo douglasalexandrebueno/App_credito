@@ -29,7 +29,7 @@ def get_data():
 
 # função para importar modelo preditivo
 def import_model():
-    return(load('modelo_final.pkl'))
+    return load(open('modelo_final.pkl','rb'))
 
 def mapear_saida(valor):
     if sexo == "Masculino":
