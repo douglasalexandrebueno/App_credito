@@ -40,9 +40,21 @@ def mapear_saida(valor):
 
     emprestimo = emprestimo / 1000
 
+# Predição
+
 data = get_data()
 
 model = import_model()
+
+prediction = modelo_final.predict( 
+        [[sexo, estado_civil, renda, emprestimo, historico_credito]])
+     
+    if prediction == 0:
+        pred = 'Rejeitado'
+    else:
+        pred = 'Aprovado'
+    return pred
+
 
 # Essa função é para criação da webpage
 def main():
