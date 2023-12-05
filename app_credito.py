@@ -22,7 +22,9 @@ def get_data():
 def import_model():
     return load(open('modelo_final.pkl','rb'))
 
-def mapear_saida(valor):
+def prediction(sexo, estado_civil, renda, emprestimo, historico_credito):
+
+# def mapear_saida(valor):
     if sexo == "Masculino":
         sexo = 0
     else:
@@ -42,18 +44,17 @@ def mapear_saida(valor):
 
 # Predição
 
-data = get_data()
+# data = get_data()
 
-model = import_model()
+# model = import_model()
 
-prediction = modelo_final.predict( 
-        [[sexo, estado_civil, renda, emprestimo, historico_credito]])
+prediction = modelo_final.predict( [[sexo, estado_civil, renda, emprestimo, historico_credito]])
      
-if prediction == 0:
+    if prediction == 0:
         pred = 'Rejeitado'
-else:
+    else:
         pred = 'Aprovado'
-return pred
+    return pred
 
 
 # Essa função é para criação da webpage
