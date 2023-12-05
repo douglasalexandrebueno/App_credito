@@ -53,7 +53,7 @@ if prediction == 0:
         pred = 'Rejeitado'
 else:
         pred = 'Aprovado'
-    return pred
+return pred
 
 
 # Essa função é para criação da webpage
