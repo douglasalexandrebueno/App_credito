@@ -48,7 +48,7 @@ def prediction(sexo, estado_civil, renda, emprestimo, historico_credito):
 
 # model = import_model()
 
-prediction = modelo_final.predict( [[sexo, estado_civil, renda, emprestimo, historico_credito]])
+    prediction = modelo_final.predict( [[sexo, estado_civil, renda, emprestimo, historico_credito]])
      
     if prediction == 0:
         pred = 'Rejeitado'
