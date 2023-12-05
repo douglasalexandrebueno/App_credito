@@ -52,7 +52,7 @@ def main():
     html_temp = """
     <div style ="background-color:blue;padding:13px">
     <h1 style ="color:white;text-align:center;">SAE</h1>
-    <h2 style ="color:white;text-align:center;">Sistema de Aprovação de Empréstimos - by Edu</h2>
+    <h2 style ="color:white;text-align:center;">Sistema de Aprovação de Empréstimos - by Douglas</h2>
     </div>
     """
 
