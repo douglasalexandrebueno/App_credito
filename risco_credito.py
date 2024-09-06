@@ -74,4 +74,4 @@ default_cols = ['indice_inad', 'anot_cadastrais', 'class_renda', 'saldo_contas']
 cols = multiselect("Atributos", data.columns.tolist(), default= default_cols)
 
 # Filtro de dados
-st.dataframe(data[cols].head(8)
+st.dataframe(data[cols].head(8))
