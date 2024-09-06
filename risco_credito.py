@@ -30,7 +30,7 @@ from sklearn.svm import SVC
 def carregar_modelo():
     model = SVC(kernel='linear', gamma= 1e-5, C=10, randon_state= 1)
     model.fit(x_mod,y)
-return model
+    return model
 
 # Criando dataframe
 data = get_data()
